@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "npm run build && gh-pages -d dist",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "cypress run",
@@ -30,6 +31,7 @@
     "babel-jest": "^27.5.1",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^7.20.0",
+    "gh-pages": "^6.3.0",
     "jest": "^27.5.1",
     "jest-environment-jsdom": "^27.5.1",
     "vue-template-compiler": "^2.6.14"

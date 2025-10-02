@@ -1,8 +1,8 @@
-# 🏇 Horse Racing Game
+# Horse Racing Game
 
 An interactive horse racing simulation game built with Vue 2 and Vuex, featuring animated races, real-time results, and comprehensive testing.
 
-## ✨ Features
+## Features
 
 ### Core Features
 - **20 Unique Horses**: Each with unique names, colors, and condition scores (1-100)
@@ -21,7 +21,7 @@ An interactive horse racing simulation game built with Vue 2 and Vuex, featuring
 - **Winner Highlighting**: Podium positions (1st, 2nd, 3rd) clearly marked
 - **Color-coded Horses**: Each horse has a unique color for easy tracking
 
-## 🚀 Technology Stack
+## Technology Stack
 
 ### Frontend
 - **Vue.js 2.6.14**: Progressive JavaScript framework
@@ -38,10 +38,10 @@ An interactive horse racing simulation game built with Vue 2 and Vuex, featuring
 - **ESLint**: Code linting and formatting
 - **Babel**: JavaScript transpilation
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
-- Node.js 18+ (recommended: Node 24 with nvm)
+- Node.js 18+ (recommended: Node 22 with nvm)
 - npm 10+
 
 ### Quick Start
@@ -72,7 +72,7 @@ npm run test:e2e           # Run E2E tests (25 tests)
 npm run test:unit -- --watch   # Watch mode for unit tests
 ```
 
-## 🎮 How to Play
+## How to Play
 
 ### Starting a Race Session
 
@@ -100,7 +100,7 @@ npm run test:unit -- --watch   # Watch mode for unit tests
    - After all 6 races, button shows "COMPLETED"
    - Generate new program to start fresh session
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 horse-racing/
@@ -138,7 +138,7 @@ horse-racing/
 └── package.json                   # Dependencies and scripts
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ### Component Overview
 
@@ -164,7 +164,7 @@ horse-racing/
 - **Program Section**: Shows scheduled races with all 10 horses
 - **Results Section**: Displays completed races with times
 - Professional card-style layout with gradients
-- Winner/podium highlighting (🥇🥈🥉)
+- Winner/podium highlighting ()
 - Completion timestamps for each race
 
 ### State Management (Vuex)
@@ -195,7 +195,7 @@ horse-racing/
 - `currentRaceData`: Returns active race information
 - `allRacesCompleted`: Checks if all 6 races are finished
 
-## 🎯 Game Rules
+## Game Rules
 
 ### Race Program Generation
 1. System generates 20 unique horses with random conditions (1-100)
@@ -217,7 +217,7 @@ horse-racing/
 3. Race completion timestamp displayed
 4. All 10 horses shown in final results
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests (147 tests)
 ```bash
@@ -225,11 +225,11 @@ npm run test:unit
 ```
 
 **Coverage:**
-- ✅ Store actions, mutations, getters (32 tests)
-- ✅ Component rendering and interactions (60+ tests)
-- ✅ Horse generation logic (20+ tests)
-- ✅ Race simulation algorithms (20+ tests)
-- ✅ Helper utilities (15+ tests)
+- Store actions, mutations, getters (32 tests)
+- Component rendering and interactions (60+ tests)
+- Horse generation logic (20+ tests)
+- Race simulation algorithms (20+ tests)
+- Helper utilities (15+ tests)
 
 **Test Files:**
 - `store.spec.js`: State management tests
@@ -258,11 +258,8 @@ npm run test:e2e
 - Race execution with animation
 - Pause/resume functionality
 - State persistence
-- Memory efficiency
-- Viewport responsiveness
-- Keyboard navigation
 
-## 🎨 UI/UX Details
+## UI/UX Details
 
 ### Color Scheme
 - **Header**: Warm brown/tan (#d4a574)
@@ -271,18 +268,13 @@ npm run test:e2e
 - **Winner**: Gold highlight (#ffd700)
 - **Podium**: Light yellow background (#fff9e6)
 
-### Responsive Breakpoints
-- **Desktop**: 1280px+ (three-column layout)
-- **Tablet**: 768px-1279px (adjusted spacing)
-- **Mobile**: <768px (stacked layout)
-
 ### Animations
 - Smooth horse movement using CSS transforms
 - Transition duration controlled by racing state
 - Progressive speed variations for realism
 - Pause-friendly animation system
 
-## 🔧 Development Notes
+## Development Notes
 
 ### Key Implementation Details
 
@@ -297,61 +289,3 @@ npm run test:e2e
 - `currentAnimationTimer` stored for proper cleanup
 - Race program reset before new generation
 - Button states: START → PAUSE → COMPLETED
-
-**Test Reliability**
-- Custom Cypress commands for common operations
-- Flexible button state assertions
-- Proper timeouts for async operations
-- Defensive pre-condition checks
-
-### Known Considerations
-
-1. **Button States**: START, PAUSE, or COMPLETED depending on race state
-2. **Race Timing**: 5s animation + 1s finish + 1.5s transition = ~7.5s per race
-3. **Horse Pool**: Same 20 horses used across all races in a session
-4. **Animation Pause**: Horses stop moving but maintain position
-5. **Test Environment**: Cypress requires Node 18+ for stability
-
-## 📈 Future Enhancement Ideas
-
-- [ ] Save race history to localStorage
-- [ ] Horse statistics and performance tracking
-- [ ] Betting system with virtual currency
-- [ ] Multiplayer support
-- [ ] Horse upgrade/training mechanics
-- [ ] Race replays
-- [ ] Sound effects and background music
-- [ ] Tournament mode
-- [ ] Leaderboards
-- [ ] Advanced race strategies
-
-## 🤝 Contributing
-
-This is a demonstration project. If you'd like to extend it:
-
-1. Fork the repository
-2. Create a feature branch
-3. Add tests for new features
-4. Ensure all tests pass
-5. Submit a pull request
-
-## 📝 License
-
-MIT License - feel free to use this project for learning and development.
-
-## 🎓 Learning Resources
-
-This project demonstrates:
-- Vue 2 component architecture
-- Vuex state management patterns
-- Animation with JavaScript intervals
-- Comprehensive testing strategies
-- Responsive design principles
-- Modern JavaScript (ES6+)
-- Project organization best practices
-
----
-
-**Built with ❤️ using Vue.js 2 & Vuex**
-
-*For questions or issues, please check the test files for implementation examples.*
